@@ -9,7 +9,7 @@ download_v2ray() {
 }
 
 install_v2() {
-    unzip -d v2 v2ray-linux-32.zip
+    unzip -d v2 v2ray-linux-64.zip
     `mv v2/v2ray /usr/bin`
     `rm -r v2`
     `mkdir -p /etc/v2ray`
@@ -101,7 +101,7 @@ main() {
     `systemctl daemon-reload`
     `systemctl start v2ray`
     `systemctl enable v2ray`
-    `rm install.sh v2ray-linux-32.zip`
+    `rm install.sh v2ray-linux-64.zip`
     systemctl status v2ray
 }
 
