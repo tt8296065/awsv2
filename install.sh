@@ -4,7 +4,7 @@
 apt update && apt install wget unzip -y
 
 download_v2ray() {
-  DOWNLOAD_LINK="https://github.com/tt8296065/v2ray-core/archive/refs/tags/v4.44.0.zip"
+  DOWNLOAD_LINK="https://github.com/tt8296065/awsv2/releases/download/untagged-8ab789bcf719c26962c4/v2ray-linux-64.zip"
   wget $DOWNLOAD_LINK
 }
 
