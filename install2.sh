@@ -23,7 +23,7 @@ install_v2() {
   },
   "inbounds": [
     {
-      "port": 36955,
+      "port": 25866,
       "protocol": "vless",
       "settings": {
         "udp": false,
