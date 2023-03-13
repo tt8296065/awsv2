@@ -23,13 +23,13 @@ install_v2() {
   },
   "inbounds": [
     {
-      "port": 25866,
+      "port": 16734,
       "protocol": "vless",
       "settings": {
         "udp": false,
         "clients": [
           {
-            "id": "bc5995fe-afbc-48c6-804d-d999071bf1ac",
+            "id": "62df6030-5821-4b64-810c-3e73b0b7b339",
             "alterId": 0,
             "email": "t@t.tt",
             "flow": ""
