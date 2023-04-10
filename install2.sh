@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+#运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install2.sh | sudo bash
 #查看运行状态 systemd status v2ray@vless
 #重启vless systemd restart v2ray@vless
 # need unzip and wget
