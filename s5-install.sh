@@ -20,42 +20,30 @@ install_v2() {
     "access": "",
     "error": "",
     "loglevel": "warning"
-  },
+{
   "inbounds": [
     {
-      "port": 15432,
+      "port": 15678,
       "protocol": "socks",
       "settings": {
-        "udp": false,
-        "clients": [
+        "auth": "password",
+        "accounts": [
           {
-            "id": "bc5995fe-afbc-48c6-804d-d999071bf1ac",
-            "alterId": 0,
-            "email": "t@t.tt",
-            "flow": ""
+            "user": "tudou",
+            "pass": "tudou666"
           }
-        ],
-        "decryption": "none",
-        "allowTransparent": false
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
-        }
+        ]
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
+      "protocol": "freedom",
       "settings": {}
     }
-  ],
+  ]
+}
+
   "routing": {
     "domainStrategy": "IPIfNonMatch",
     "rules": []
@@ -110,3 +98,5 @@ main() {
 }
 
 main
+
+
