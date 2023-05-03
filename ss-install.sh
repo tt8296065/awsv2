@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 #运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/ss-install.sh | sudo bash
+#导入链接：ss://YWVzLTI1Ni1nY206dHVkb3U2NjY=@1.1.1.1:8833#tdmake
 #查看运行状态 systemctl status v2ray@shadowsocks
 #重启service systemctl restart v2ray@shadowsocks
 # need unzip and wget
