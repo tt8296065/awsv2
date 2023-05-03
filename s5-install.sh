@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
 #运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/s5-install.sh | sudo bash
-#配置文件示例：1.1.1.1:15678:tudou:tudou666
-#查看运行状态 systemd status v2ray@vless
-#重启vless systemd restart v2ray@vless
+#查看运行状态 systemd status v2ray@socks5
+#重启socks5 systemd restart v2ray@socks5
 # need unzip and wget
 apt update && apt install wget unzip -y
 
@@ -22,41 +21,36 @@ install_v2() {
     "access": "",
     "error": "",
     "loglevel": "warning"
-{
+  },
   "inbounds": [
     {
-      "port": 15678,
+      "port": 1080,
       "protocol": "socks",
       "settings": {
         "auth": "password",
         "accounts": [
           {
             "user": "tudou",
-            "pass": "tudou666"
+            "pass": "tudou666",
+            "email": "t@t.tt"
           }
-        ]
+        ],
+        "udp": false
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
-}
-
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": []
-  }
-}' > '/etc/v2ray/vless.json'
+}' > '/etc/v2ray/socks.json'
 }
 
 register_systemd() {
     echo "#register_system_service and optimized_network edit: 20220428
 [Unit]
-Description=gost
+Description=v2ray SOCKS5 Proxy
 After=network-online.target
 Wants=network-online.target systemd-networkd-wait-online.service
 
@@ -93,12 +87,19 @@ main() {
     install_v2
     register_systemd
     `systemctl daemon-reload`
-    `systemctl start v2ray@vless`
-    `systemctl enable v2ray@vless`
-    systemctl status v2ray@vless
+    `systemctl start v2ray@socks5`
+    `systemctl enable v2ray@socks5`
+    systemctl status v2ray@socks5
     `rm install.sh v2ray-linux-64.zip`
 }
 
 main
 
 
+
+
+# 查看运行状态
+# systemctl status v2ray@socks5
+
+# 重启socks5服务
+# systemctl restart v2ray@socks5
