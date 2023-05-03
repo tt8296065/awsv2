@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 #运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install2.sh | sudo bash
+#导入代理软件：vless://62df6030-5821-4b64-810c-3e73b0b7b339@3.144.254.121:16734?encryption=none&security=none&type=ws&path=%2f#tdmake
 #查看运行状态 systemd status v2ray@vless
 #重启vless systemd restart v2ray@vless
 # need unzip and wget
