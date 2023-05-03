@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 #运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/s5-install.sh | sudo bash
+#导入或者参数是：1.1.1.1:10180:tudou:tudou666
 #查看运行状态 systemd status v2ray@socks5
 #重启socks5 systemd restart v2ray@socks5
 # need unzip and wget
@@ -24,7 +25,7 @@ install_v2() {
   },
   "inbounds": [
     {
-      "port": 1080,
+      "port": 10180,
       "protocol": "socks",
       "settings": {
         "auth": "password",
