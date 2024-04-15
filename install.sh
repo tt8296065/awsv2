@@ -1,6 +1,9 @@
 #!/usr/bin/bash
 
 # need unzip and wget
+#运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install.sh | sudo bash
+#导入代理软件：vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlhETUVTUy0xREFJIiwNCiAgImFkZCI6ICIzLjE0NC40LjMwIiwNCiAgInBvcnQiOiAiNDc3NjUiLA0KICAiaWQiOiAiNTk1YjFlYzUtMzhmOC00NTczLWNhMGYtODc2Nzk5M2ZiYzA1IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0=
+
 apt update && apt install wget unzip -y
 
 download_v2ray() {
