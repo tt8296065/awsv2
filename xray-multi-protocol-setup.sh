@@ -1,15 +1,15 @@
 #!/bin/bash
 # 一键搭建socks5/ss/vmess/vless四协议代理
-
+# 运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/xray-multi-protocol-setup.sh | sudo bash
 # 定义端口号和密码/UUID
-SOCKS_PORT=1081
-SS_PORT=1082
-VMESS_PORT=1083
-VLESS_PORT=1084
+SOCKS_PORT=21081
+SS_PORT=21082
+VMESS_PORT=21083
+VLESS_PORT=21084
 
-SOCKS_USER="user"
-SOCKS_PASS="password"
-SS_PASSWORD="password1"
+SOCKS_USER="tudou"
+SOCKS_PASS="tudou666888"
+SS_PASSWORD="sadSDgdf1Sc"
 VMESS_UUID="832f88a0-195b-49c6-8ed7-218837087291"
 VLESS_UUID="832f88a0-195b-49c6-8ed7-218837087291"
 
