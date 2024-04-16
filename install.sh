@@ -2,7 +2,7 @@
 
 # need unzip and wget
 #运行代码是：sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install.sh | sudo bash
-#导入代理软件：vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlhETUVTUy0xREFJIiwNCiAgImFkZCI6ICIzLjE0NC40LjMwIiwNCiAgInBvcnQiOiAiNDc3NjUiLA0KICAiaWQiOiAiNTk1YjFlYzUtMzhmOC00NTczLWNhMGYtODc2Nzk5M2ZiYzA1IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0=
+#导入代理软件：vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlhETUVTUy0xREFJIiwNCiAgImFkZCI6ICIzNC4yMjEuMTc4LjI0MSIsDQogICJwb3J0IjogIjIzNDU2IiwNCiAgImlkIjogIjE5Njk5YjlhLTQyZmEtNGFmMy04Nzc3LWJhNWNmODdmNzkzMyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiL3RkdjUiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 
 apt update && apt install wget unzip -y
 
@@ -24,13 +24,13 @@ install_v2() {
   },
   "inbounds": [
     {
-      "port": 47765,
+      "port": 23456,
       "protocol": "vmess",
       "settings": {
         "udp": false,
         "clients": [
           {
-            "id": "595b1ec5-38f8-4573-ca0f-8767993fbc05",
+            "id": "19699b9a-42fa-4af3-8777-ba5cf87f7933",
             "alterId": 0,
             "email": "t@t.tt"
           }
@@ -40,7 +40,7 @@ install_v2() {
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/"
+          "path": "/tdv5"
         }
       }
     }
