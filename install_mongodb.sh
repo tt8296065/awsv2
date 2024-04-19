@@ -17,3 +17,6 @@ sudo systemctl start mongod
 
 # 设置MongoDB在启动时自动运行
 sudo systemctl enable mongod
+
+
+# 运行代码:sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install_mongodb.sh | sudo bash
