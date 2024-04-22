@@ -21,3 +21,4 @@ sudo systemctl enable mongod
 
 # 运行代码:sudo curl -s -L https://raw.githubusercontent.com/tt8296065/awsv2/main/install_mongodb.sh | sudo bash
 # 这是检查盲狗是否搭建成功的命令：sudo systemctl status mongod
+# 重启盲狗数据库的命令:sudo systemctl restart mongod
